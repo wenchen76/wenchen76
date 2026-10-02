@@ -39,14 +39,17 @@ def repo_of(item: dict) -> str:
 def render(items: list[dict]) -> str:
     if not items:
         return "_None yet._"
-    lines = ["| Date | Project | Title |", "|---|---|---|"]
+    # Group by repository, keeping repositories in order of their newest item.
+    groups: dict[str, list[dict]] = {}
     for item in items:
-        repo = repo_of(item)
-        title = item["title"].replace("|", "\\|")
-        lines.append(
-            f"| {item['created_at'][:10]} | `{repo}` | [{title}]({item['html_url']}) (#{item['number']}) |"
-        )
-    return "\n".join(lines)
+        groups.setdefault(repo_of(item), []).append(item)
+    blocks = []
+    for repo, repo_items in groups.items():
+        lines = [f"**[{repo}](https://github.com/{repo})**", ""]
+        for item in repo_items:
+            lines.append(f"- [{item['title']}]({item['html_url']}) `#{item['number']}`")
+        blocks.append("\n".join(lines))
+    return "\n\n".join(blocks)
 
 
 def replace_section(text: str, name: str, body: str) -> str:
@@ -60,6 +63,7 @@ def main() -> None:
     sections = {
         "merged": search(f"{upstream} is:pr is:merged"),
         "open": search(f"{upstream} is:pr is:open"),
+        "closed": search(f"{upstream} is:pr is:closed is:unmerged"),
         "issues": search(f"{upstream} is:issue"),
     }
     text = README.read_text()
