@@ -37,15 +37,13 @@ def repo_of(item: dict) -> str:
 
 
 def render(items: list[dict]) -> str:
-    if not items:
-        return "_None yet._"
     # Group by repository, keeping repositories in order of their newest item.
     groups: dict[str, list[dict]] = {}
     for item in items:
         groups.setdefault(repo_of(item), []).append(item)
     blocks = []
     for repo, repo_items in groups.items():
-        lines = [f"**[{repo}](https://github.com/{repo})**", ""]
+        lines = [f"**{repo}**", ""]
         for item in repo_items:
             lines.append(f"- [{item['title']}]({item['html_url']}) `#{item['number']}`")
         blocks.append("\n".join(lines))
@@ -54,7 +52,8 @@ def render(items: list[dict]) -> str:
 
 def replace_section(text: str, name: str, body: str) -> str:
     pattern = re.compile(rf"(<!-- {name}:start -->).*?(<!-- {name}:end -->)", re.S)
-    return pattern.sub(lambda m: f"{m.group(1)}\n{body}\n{m.group(2)}", text)
+    inner = f"\n{body}\n" if body else "\n"
+    return pattern.sub(lambda m: f"{m.group(1)}{inner}{m.group(2)}", text)
 
 
 def main() -> None:
