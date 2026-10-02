@@ -1,6 +1,6 @@
 ## Hi, I'm Wenchen Lo 👋
 
-I'm an AI infrastructure engineer focused on LLM inference engine internals and GPU kernel development. I contribute to [SGLang](https://github.com/sgl-project/sglang), [vLLM](https://github.com/vllm-project/vllm), and [FlashInfer](https://github.com/flashinfer-ai/flashinfer). Previously, I worked at Apple building ML infrastructure for Siri.
+I'm an AI infrastructure engineer focused on LLM inference engine internals and GPU kernel development. I contribute to [SGLang](https://github.com/sgl-project/sglang), [SGLang-Omni](https://github.com/sgl-project/sglang-omni), [vLLM](https://github.com/vllm-project/vllm), and [FlashInfer](https://github.com/flashinfer-ai/flashinfer). Previously, I worked at Apple building ML infrastructure for Siri.
 
 
 ### Merged pull requests 🎉
