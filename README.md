@@ -36,6 +36,9 @@ https://github.com/sgl-project/sglang/issues/39299
 ### Pull requests in progress ⏳
 
 <!-- open:start -->
+**sgl-project/sglang**
+
+- [[Perf] moe: Defer finalize for MXFP8 experts on the routed TRT-LLM runner](https://github.com/sgl-project/sglang/pull/46387) `#46387`
 <!-- open:end -->
 
 ### Issues reported 📝
