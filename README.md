@@ -36,6 +36,10 @@ https://github.com/sgl-project/sglang/issues/39299
 ### Pull requests in progress ⏳
 
 <!-- open:start -->
+**sgl-project/sglang-omni**
+
+- [[Qwen3-Omni] Keep the thinker's prefill CUDA graph under EAGLE3 drafts](https://github.com/sgl-project/sglang-omni/pull/3247) `#3247`
+
 **sgl-project/sglang**
 
 - [[Perf] moe: Defer finalize for MXFP8 experts on the routed TRT-LLM runner](https://github.com/sgl-project/sglang/pull/46387) `#46387`
