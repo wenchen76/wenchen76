@@ -30,6 +30,8 @@ https://github.com/sgl-project/sglang/issues/39299
 <!-- working:start -->
 **flashinfer-ai/flashinfer**
 
+- [[RL] cuDNN SDPA forward differs across processes on H100 (cuDNN 9.24): document or guard the cudnn attention backend for batch-invariant runs](https://github.com/flashinfer-ai/flashinfer/issues/7982) `#7982`
+- [[RL] CUDA-core decode silently ignores disable_split_kv and is batch-variant; backend="auto" should honor or reject the batch-invariance flags](https://github.com/flashinfer-ai/flashinfer/issues/7981) `#7981`
 - [SM120 sparse-MLA decode (DSv3.2 / GLM-NSA): chunks_per_block follows the call's total token count, so a request's output depends on the other requests in the step](https://github.com/flashinfer-ai/flashinfer/issues/5553) `#5553`
 
 **sgl-project/sglang**
