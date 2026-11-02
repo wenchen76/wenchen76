@@ -20,6 +20,23 @@ I'm an AI infrastructure engineer focused on LLM inference engine internals and 
 - [Remove xformers requirement for Mistral-format Pixtral and Mistral3](https://github.com/vllm-project/vllm/pull/21154) `#21154`
 <!-- merged:end -->
 
+### Pull requests in progress ⏳
+
+<!-- open:start -->
+**flashinfer-ai/flashinfer**
+
+- [feat(mla): add batch_invariant to SM120 sparse MLA decode (DSv3.2 / GLM-NSA)](https://github.com/flashinfer-ai/flashinfer/pull/8305) `#8305`
+
+**sgl-project/sglang-omni**
+
+- [[Qwen3-Omni] Support speech output with DFlash and EAGLE3 thinker drafts](https://github.com/sgl-project/sglang-omni/pull/3423) `#3423`
+- [[Speculative] Return logprobs for tokens a draft verifies](https://github.com/sgl-project/sglang-omni/pull/3422) `#3422`
+
+**sgl-project/sglang**
+
+- [[Perf] moe: Defer finalize for MXFP8 experts on the routed TRT-LLM runner](https://github.com/sgl-project/sglang/pull/46387) `#46387`
+<!-- open:end -->
+
 ### Issues working in progress 🛠️
 
 <!-- working-manual
@@ -38,23 +55,6 @@ https://github.com/sgl-project/sglang/issues/39299
 
 - [MoE deferred finalize is unreachable for models that supply their own routing (FLASHINFER_TRTLLM_ROUTED excluded)](https://github.com/sgl-project/sglang/issues/39299) `#39299`
 <!-- working:end -->
-
-### Pull requests in progress ⏳
-
-<!-- open:start -->
-**flashinfer-ai/flashinfer**
-
-- [feat(mla): add batch_invariant to SM120 sparse MLA decode (DSv3.2 / GLM-NSA)](https://github.com/flashinfer-ai/flashinfer/pull/8305) `#8305`
-
-**sgl-project/sglang-omni**
-
-- [[Qwen3-Omni] Support speech output with DFlash and EAGLE3 thinker drafts](https://github.com/sgl-project/sglang-omni/pull/3423) `#3423`
-- [[Speculative] Return logprobs for tokens a draft verifies](https://github.com/sgl-project/sglang-omni/pull/3422) `#3422`
-
-**sgl-project/sglang**
-
-- [[Perf] moe: Defer finalize for MXFP8 experts on the routed TRT-LLM runner](https://github.com/sgl-project/sglang/pull/46387) `#46387`
-<!-- open:end -->
 
 ### Issues reported 📝
 
