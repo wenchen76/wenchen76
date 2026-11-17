@@ -31,10 +31,6 @@ I'm an AI infrastructure engineer focused on LLM inference engine internals and 
 
 - [[Qwen3-Omni] Support speech output with DFlash and EAGLE3 thinker drafts](https://github.com/sgl-project/sglang-omni/pull/3423) `#3423`
 - [[Speculative] Return logprobs for tokens a draft verifies](https://github.com/sgl-project/sglang-omni/pull/3422) `#3422`
-
-**sgl-project/sglang**
-
-- [[Perf] moe: Defer finalize for MXFP8 experts on the routed TRT-LLM runner](https://github.com/sgl-project/sglang/pull/46387) `#46387`
 <!-- open:end -->
 
 ### Issues working in progress 🛠️
@@ -72,6 +68,10 @@ https://github.com/sgl-project/sglang/issues/39299
 ### Other contributions 🗂️
 
 <!-- closed:start -->
+**sgl-project/sglang**
+
+- [[Perf] moe: Defer finalize for MXFP8 experts on the routed TRT-LLM runner](https://github.com/sgl-project/sglang/pull/46387) `PR #46387 · closed`
+
 **vllm-project/vllm**
 
 - [[Model] Add Support for Grok2](https://github.com/vllm-project/vllm/pull/24286) `PR #24286 · closed`
